@@ -11,8 +11,8 @@ def main():
         
         with open("expenses.txt") as f:
             for line in f:
-                name, number = line.strip().split("\t")
                 try:
+                    name, number = line.strip().split("\t")
                     number = int(number)
                     name_list.append(name)
                     num_list.append(number)
